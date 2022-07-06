@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100;
+    height: 200vh;
+    background:orange;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+form{
+    position: absolute;
+    width: 90%;
+    height: 196vh;
+    background: orange;
+    margin-left: 5%;
+   
+
+}
+
+.cover{
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    background: url(img2.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 4px 20px rgb(2, 2, 2) ;
+}
+
+.moni{
+    
+    width: 100%;
+    height: 10vh;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+.moni h2{
+   font-size: 50px;
+   animation: animate 2s infinite;
+}
+
+@keyframes animate{
+    0%{ color: green;}
+    25%{ color: red;}
+    50%{ color: blue;}
+    75%{ color: rgb(252, 247, 252);}
+    100%{ color: black;}
+}
+
+
+
+.moni span{
+    font-size: 60px;
+    color: rgb(231, 247, 10);
+    font-weight: 800;
+    background-color: rgba(14, 12, 12, .5);
+}
+
+.hd{
+    width: 70%;
+    margin-left: 120px;
+    background: rgb(54, 145, 1);
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.hd h3{
+    padding-left: 20px;
+}
+
+.card-box{
+    margin-left: 30px;
+    font-size: 15px;
+    padding: 20px;
+}
+span{
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+
+.fm{
+    width: 70%;
+    height: 130vh;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: url(imgg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10%;
+    box-shadow: 0px 9px 20px  rgb(9, 12, 9);
+    border-radius: 10px;
+    color: rgb(235, 252, 240);
+    box-shadow: 2px 2px 20px rgb(5, 4, 4) ;
+    filter: drop-shadow(2px 2px 30px black);
+}
+
+@media (max-width: 700px){
+
+    .container{
+        width: 100;
+        height: 330vh;
+        background: blueviolet;
+        color: white;
+    }
+    form{
+        height: 325vh;
+    }
+    
+    .moni h2{
+        font-size: 30px;
+    }
+    .moni span{
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+
+    .fm{
+        margin-top: 20px;
+        width: 70%;
+        height: 290vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hd{
+        margin-left: 50px;
+    }
+    
+    .in{
+            width: 100%;
+            height: 50px;
+            margin-left: 10px;
+            font-size: 15px;
+            padding: 20px;
+        
+            display: flex;
+            align-items: center;
+        
+        }
+        .in input{
+            position: absolute;
+            left: 0%;
+            top: 130vh;
+        }
+
+                
+        form .acct{
+           
+            position: absolute;
+            display: flex;
+            top: 210vh;
+            height: 60vh;
+            border-radius: 10px;
+            background-color: green;
+        
+        }
+
+        form .acct h4{
+            font-size: 22px;
+            padding-top: 30px;
+            margin-left: -50px;
+        }
+
+
+        form .flex{
+            top: 220vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+ 
+
+}
+
+
+.card-box{
+    margin-left: 30px;
+    font-size: 25px;
+    padding: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.card-box:nth-of-type(15) span{
+    color: rgb(0, 128, 6);
+}
+
+
+
+input{
+    padding: 4px;
+    border-radius: 5px;
+}
+.in{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    margin-left: 40%;
+    font-size: 15px;
+    padding: 20px;
+    margin-top: 145vh;
+    background-color: transparent;
+   
+  
+  
+}
+
+.in input{
+    border-style: none;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: blueviolet;
+}
+
+.in input:hover{
+  
+    background: aqua;
+    color: white;
+}
+
+.acct{
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(2, 131, 2, .5);
+    top: 133vh;
+    border-radius: 10px;
+   
+}
+
+.acct h4{
+    padding-left: 40%;
+    font-size: 25px;
+}
+.flex{
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    
+    background-color: transparent;
+    top: 134vh;
+    display: flex;
+
+}
+.addi{
+    margin-top: 50vh;
+    width: 100%;
+    padding: 100px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    margin-top: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.two{
+    width: 350px;
+    height: 350px;
+    border: 10px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 4px 4px 20px grey;
+}
+.three{
+    width: 250px;
+    height: 250px;
+    border: 10px solid ornge;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 4px 4px 20px grey;
+}
+
+.ryt-new{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  
+  
+   
+}
+
+.new-ryt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+.new-ryt h5{
+    font-size: 20px;
+}
+
+.new-ryt h2{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    padding-top: 10px;
+}
+
+.nte h4{
+    position: absolute;
+   padding-top: 100px;
+   font-family: sans-serif;
+   left: 200px;
+   font-size: 30px;
+}
+
+.nte h2{
+    position: absolute;
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: 1.2px;
+}
+.nte p{
+    font-family: sans-serif;
+    position: absolute;
+    font-weight: 800;
+    text-decoration: underline;
+    padding-top: 80px;
+    padding-left: 400px;
+}
+
+.nte span{
+   font-size: 40px;
+    
+}
+@media (max-width: 700px){
+   .nte h4 {
+       position: absolute;
+       font-size: 12px;
+       font-weight: 800;
+       margin-left: -150px;
+       padding-top: 150px;
+
+   }
+   
+.nte span{
+    font-size: 40px;
+    padding-left: 140px;
+     
+ }
+   
+   .nte p{
+       display: none;
+   }
+}

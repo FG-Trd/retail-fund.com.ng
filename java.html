@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="main.css">
+    <title>Retail-Funds.ng.com</title>
+</head>
+<body>
+    <div class="result">
+        <h3>YOUR INFORMATION</h3><hr><br>
+        <h4>First name: <span id="firstname"></span></h4> <br>
+        <h4>  Middle name: <span id="mid"></span></h4><br>
+       <h4> Surname: <span id="sur"></span></h4><br>
+       <h4> Phone Number: <span id="phone"></span></h4><br>
+       <h4> Email : <span id="mail"></span></h4><br>
+        <h4>State Of Origin : <span id="state"></span></h4><br>
+       <h4> L.G.A : <span id="lga"></span></h4><br>
+        <h4>Home Address : <span id="add"></span></h4><br>
+       <h4> Date Of Birth : <span id="dob" ></span></h4><br>
+       <h4> Gender : <span id="gen" ></span></h4><br>
+
+
+       <h4> Type Of Business : <span id="biz"></span></h4><br>
+       <h4>line of Business : <span id="line"></span></h4><br><br><br>
+
+
+
+        <h4>Your Account Details!</h4><br><hr>
+       <h4>Account name : <span id="acct"></span></h4><br>
+       <h4> Bank Name : <span id="bank" ></span></h4><br>
+       <h4> Account Number : <span id="actno" ></span></h4><br>
+
+       <a href="file:///C:/Users/USER/Desktop/Retail-fund/frnt/last.html"> <input type="submit"  id="finish" onclick="finish()" value="Get your D-Link"></a>
+    </div>
+   
+       
+
+    <script>
+        document.getElementById("firstname").innerHTML = sessionStorage.getItem("name");
+        document.getElementById("mid").innerHTML = sessionStorage.getItem("midn");
+        document.getElementById("sur").innerHTML = sessionStorage.getItem("sur");
+        document.getElementById("phone").innerHTML = sessionStorage.getItem("phn");
+        document.getElementById("mail").innerHTML = sessionStorage.getItem("email");
+        document.getElementById("state").innerHTML = sessionStorage.getItem("state");
+        document.getElementById("lga").innerHTML = sessionStorage.getItem("lga");
+
+        document.getElementById("add").innerHTML = sessionStorage.getItem("add");
+        document.getElementById("dob").innerHTML = sessionStorage.getItem("dob");
+        document.getElementById("gen").innerHTML = sessionStorage.getItem("gen");
+       
+        document.getElementById("biz").innerHTML = sessionStorage.getItem("biz");
+        document.getElementById("line").innerHTML = sessionStorage.getItem("line");
+
+        
+        document.getElementById("acct").innerHTML = sessionStorage.getItem("acct");
+        document.getElementById("bank").innerHTML = sessionStorage.getItem("bank");
+        document.getElementById("actno").innerHTML = sessionStorage.getItem("actno");
+       
+
+
+
+      
+        function finish(){
+          
+           const bee = confirm('IS YOUR INFORMATION CORRECT?');
+           if(bee === false){
+               event.preventDefault();
+           }
+           if(bee !== false){
+               alert(' GET YOUR DISBURMENT LINK!!');
+           }
+        }
+
+
+    </script>
+</body>
+</html>

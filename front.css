@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 120vh;
+    background-color: orange;
+}
+
+.main{
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    background: url(imgg.png) no-repeat;
+    background-position: center;
+    background-size: 700px;
+    color: white;
+    animation: pic 15s  infinite;
+   
+
+}
+@keyframes pic {
+    0%{background: url(img.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    25%{background: url(okada.jpeg) no-repeat;
+        background-position: center;
+        background-size: 700px;
+    }
+
+    
+    75%{background: url(img3.jpeg) no-repeat;
+        background-position: 700px;
+        background-size: 700px;
+    }
+   
+    100%{background: url(img4.jpeg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+
+.wrt{
+    position: absolute;
+    width: 45%;
+    height: 50vh;
+    left: 20px;
+    background: url(img6.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: wrt 5s infinite;
+   
+}
+
+.wrt h2{
+   padding-left: 200px;
+   padding-top: 15px;
+   font-weight: 600;
+   background-color: black;
+}
+.wrt p{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
+    letter-spacing: 1.5px;
+    line-height: 2;
+    background-color: rgba(17, 16, 16, .2);
+}
+.wrt span{
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.cry{
+    position: absolute;
+    width: 45%;
+    height: 45vh;
+    top: 65vh;
+    padding-top: 10px;
+    left: 20px;
+    background: url(img1.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: cry 10s infinite;
+}
+
+
+@keyframes cy{
+    0%{background:  rgb(75, 3, 104);}
+    50%{background: red;}
+    100%{background: green;}
+}
+
+
+.cry h2{
+    padding-left: 200px;
+    padding-top: 15px;
+    font-weight: 600;
+    background-color: black;
+ }
+ .cry ul li{
+     font-family: sans-serif;
+     padding-left: 30px;
+     padding-top: 40px;
+     letter-spacing: 1.5px;
+     line-height: .5;
+     font-weight: 700;
+     background-color: rgb(22, 22, 22, .2);
+ }
+
+ 
+ @media (max-width: 700px){
+
+    .container{
+        height: 150vh;
+    }
+
+
+    .main{
+        height: 147vh;
+    }
+     .wrt{
+         width: 65%;
+         font-size: 15px;
+         height: 65vh;
+     }
+     .wrt h2{
+        padding-left: 20px;
+        padding-top: 15px;
+        font-weight: 600;
+        color: blue;
+     }
+     .wrt p{
+         font-size: 15px;
+     }
+
+     
+    .cry{
+       
+        letter-spacing: 0px;
+        width: 65%;
+        height: 45vh;
+        top: 65vh;
+        font-size: 13px;
+        
+    }
+
+    .cry ul li{
+        padding-left: 5px;
+    }
+
+     
+    .cry h2{
+        padding-left: 20px;
+        padding-top: 15px;
+        font-weight: 600;
+        font-size: 25px;
+        color: rgb(0, 0, 141);
+     }
+
+            
+        .main .topic{
+            width: 100%;
+            height: 10vh;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+        }
+       .main .topic h3{
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+        .vote{
+           position: absolute;
+           margin-left: -800px;
+           margin-top: 30vh;
+          
+        }
+
+                
+        button{
+            margin-top: 1000px;
+           
+        }
+        
+}
+
+
+
+
+ 
+
+ .topic{
+     width: 100%;
+     height: 10vh;
+     background: transparent;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: rgb(235, 239, 243);
+ }
+ .topic h3{
+     font-size: 50px;
+     letter-spacing: 15px;
+     background-color: rgba(20, 18, 18, .5);
+ }
+
+ .sub{
+     position: absolute;
+     width: 100%;
+     height: 6vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     top: 112vh;
+ }
+
+ button{
+     padding: 6px 40px;
+     border-radius: 5px;
+     background: blue;
+     color: white;
+     font-size: 20px;
+     font-weight: 600;
+     border-style: none;
+     box-shadow: 4px 4px 20px gray;
+     transition: .5s;
+ }
+ button:hover{
+     background: skyblue;
+     color: green;
+ }
+ .vote{
+     position: absolute;
+     top: 90vh;
+     left: 750px;
+
+ }
+ 
+.addi{
+    margin-top: 50vh;
+    width: 100%;
+    padding: 100px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    margin-top: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.two{
+    width: 350px;
+    height: 350px;
+    border: 10px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 4px 4px 20px grey;
+}
+.three{
+    width: 250px;
+    height: 250px;
+    border: 10px solid ornge;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 4px 4px 20px grey;
+}
+
+
+.ryt-new{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  
+  
+   
+}
+
+.new-ryt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+.new-ryt h5{
+    font-size: 20px;
+}
+
+.new-ryt h2{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    padding-top: 10px;
+}
+
+ .nte h4{
+     position: absolute;
+    padding-top: 100px;
+    font-family: sans-serif;
+    left: 200px;
+    font-size: 30px;
+}
+.nte h2{
+    position: absolute;
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: 1.2px;
+}
+.nte span{
+    font-family: sans-serif;
+    position: absolute;
+    font-weight: 800;
+    padding-top: 50px;
+    padding-left: 400px;
+}
+
+
+nte span{
+    animation: pvc 1s infinite;
+}
+@media (max-width: 700px){
+    .nte h4 {
+        position: absolute;
+        top: 1000px;
+        font-size: 17px;
+        margin-left: -100px;
+
+    }
+    .nte span{
+        display: none;
+    }
+}
